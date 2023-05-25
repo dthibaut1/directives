@@ -1,0 +1,6 @@
+<h1 [ngClass]="{'red-color': isAdmin}">{{title}}</h1>
+<button class="btn" type="button">View</button>
+<button class="btn" *ngIf="isAdmin" type="button">Edit</button>
+<p>
+  <button class="btn" type="button" (click)="toggleIsAdmin()">{{ isAdmin ? 'Hide ' : 'Show'}} "Edit"</button>
+</p>
